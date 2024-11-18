@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #9370db;
+  /* #008b8b */
+}
+
+/* HEADER */
+header {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-left: 100px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  /* padding: 1rem; */
+  margin-left: 600px;
+  padding-top: 2rem;
+  font-size: 1.4rem;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid white;
+}
+
+/* MAIN */
+main {
+  padding-top: 120px;
+}
+
+.imagem-topo {
+  width: 100%;
+  height: 100vh;
+}
+
+.sobre-internet {
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #9370db;
+}
+
+.sobre-internet p {
+  color: #000000;
+  text-align: justify;
+  text-align: start;
+  font-size: 1.3rem;
+  padding-bottom: 1.5rem;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.sobre-internet h2 {
+  color: #000000;
+  text-align: center;
+  /* padding-left: 360px; */
+  padding-bottom: 1.8rem;
+  font-size: 3rem;
+}
+
+#internett {
+  padding: 40px;
+}
+
+#sobree {
+  padding: 120px;
+}
+
+.planos {
+  padding-bottom: 10rem;
+}
+
+.planos h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  padding-top: 5rem;
+}
+
+.planos ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.planos ul li {
+  background-color: rgb(153, 224, 252);
+  padding: 1.5rem;
+  width: 30%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.planos ul li h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.planos ul li .preco {
+  font-size: 1.2rem;
+  color: black;
+  margin-top: 1rem;
+}
+
+#internet .planos ul li button {
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none; /* Remover borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão ao passar por cima */
+  transition: background-color 0.7s ease; /* Transição suave ao passar o mouse */
+}
+
+#internet .planos ul li button:hover {
+  background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+/* INICIO ESCOLHER CIDADE/INSTALAÇÃO */
+/* Estilizando o input associado ao datalist */
+#city {
+  width: 200px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos adicionais (embora as opções dentro do datalist não sejam diretamente estilizáveis) */
+#instalacao option {
+  color: blue; /* Alguns navegadores podem aplicar isso às opções, mas não é garantido */
+}
+
+.instalar {
+  text-align: center;
+  padding-bottom: 8rem;
+  padding-top: 6rem;
+}
+
+.instalar label {
+  font-size: 2rem;
+}
+
+.instalar h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+#cidadee {
+  padding: 200px;
+}
+/* FIM CIDADE/INSTALAÇÃO */
+
+/* WHATSAPP */
+.whats {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #00ff00;
+}
+
+.whats img {
+  width: 80px;
+  height: auto;
+}
+/* FIM WHATS */
+
+/* INICIO AVALIAÇÕES  */
+
+.velocidade {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  gap: 50px; /* Espaço entre as imagens */
+  animation: slide 10s linear infinite;
+}
+
+.velocidade h4 {
+  font-size: 2.6rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.veloz {
+  width: 30%;
+  height: 40vh;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (min-width: 190px) and (max-width: 820px) {
+  .velocidade {
+    display: none;
+  }
+}
+
+#avaliacoess {
+  padding: 70px;
+}
+
+/* FIM AVALIAÇÕES */
+
+/* FOOTER */
+footer {
+  background-color: #808080;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
